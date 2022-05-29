@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<!-- CSS file Included -->
+	<link rel="stylesheet"
+		type="text/css" href="./style.css">
+
+	<!-- JavaScript file included -->
+</head>
+
+<body>
+	<div id="main">
+		<h1>TIC TAC TOE</h1>
+
+		<p id="noofgames" style="background-color: black; color: white; text-align: center; margin: auto; width: 200px;">Number of games played: </p><br>
+
+
+    <div class="score" id="score">
+      <p><span id="p1namedisplay">Player 1</span><input type="text" id="p1name" style="display:none;">: 0</p>
+      <p><span id="p2namedisplay">Player 2</span><input type="text" id="p2name" style="display:none;">: 0</p>
+	  <p>Draw: 0</p>
+
+    </div>
+
+		<!-- Game Instructions -->
+		<p id="ins">Game starts by just Tap on
+			box<br><br>First Player starts as
+			<b>Player X</b><br>And<br>Second
+			Player as <b>Player 0</b>
+		</p>
+
+
+
+
+		<br><br>
+		<!-- 3*3 grid of Boxes -->
+		<div class="board" id="board">
+			<input type="text" id="b1" onclick=
+			"myfunc_3(); myfunc();">
+
+		<input type="text" id="b2" onclick=
+			"myfunc_4(); myfunc();">
+
+		<input type="text" id="b3" onclick=
+			"myfunc_5(); myfunc();">
+		<br><br>
+
+		<input type="text" id="b4" onclick=
+			"myfunc_6(); myfunc();">
+			
+		<input type="text" id="b5" onclick=
+			"myfunc_7(); myfunc();">
+
+		<input type="text" id="b6" onclick=
+			"myfunc_8(); myfunc();">
+		<br><br>
+
+		<input type="text" id="b7" onclick=
+			"myfunc_9(); myfunc();">
+
+		<input type="text" id="b8" onclick=
+			"myfunc_10();myfunc();">
+
+		<input type="text" id="b9" onclick=
+			"myfunc_11();myfunc();" >
+
+		</div>
+		<!-- Grid end here -->
+		<br><br><br>
+		<!-- Button to reset game -->
+		<button id="but" class="restart" onclick="my_func2()">
+			RESET
+		</button>
+
+		<br><br>
+		<!-- Space to show player turn -->
+		<p id="print"></p>
+
+
+
+
+	</div>
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+
+  <script src="main.js"></script>
+  <script> src="https://code.jquery.com/jquery-3.5.1.js"</script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+
+
+  
+</body>
+
+</html>
